@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5 rounded-m w-full">
+  <div class="p-5 rounded-m w-full" @click="$emit('select-card')">
     <div>
       <figure class="w-[200px] h-[200px]">
         <img :src="src" :alt="alt" class="w-full h-auto object-contain" />

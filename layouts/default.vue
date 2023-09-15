@@ -2,7 +2,7 @@
   <div>
     <!-- header -->
     <Navbar :options="options" />
-    <Nuxt />
+    <Nuxt class="min-h-screen" />
     <!-- footer -->
     <TheFooter />
   </div>

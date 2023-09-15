@@ -1,9 +1,13 @@
 <template>
   <header>
     <nav class="flex justify-between p-3 bg-cyan-950">
-      <span class="text-slate-300 font-extrabold text-xl">BLOG</span>
+      <span class="text-slate-300 font-extrabold text-xl">
+        <nuxt-link to="/home">BESTOBLOG</nuxt-link>
+      </span>
       <aside>
-        <label class="text-slate-300 font-bold">Usuario logeado</label>
+        <label class="text-slate-300 font-bold">
+          <nuxt-link to="/"> Usuario logeado</nuxt-link>
+        </label>
       </aside>
     </nav>
     <nav>

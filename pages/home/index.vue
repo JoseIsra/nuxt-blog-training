@@ -11,6 +11,7 @@
         :alt="card.alt"
         :title="card.title"
         :subtitle="card.subtitle"
+        @select-card="handleCardSelected(card.title)"
       />
     </div>
   </main>
@@ -21,7 +22,6 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'HomePage',
-  layout: 'main',
   data() {
     return {
       cards: [
@@ -51,6 +51,11 @@ export default Vue.extend({
         },
       ],
     }
+  },
+  methods: {
+    handleCardSelected(titleCard: string) {
+      this.$router.push({ name: 'blogs-slug', params: { slug: titleCard } })
+    },
   },
 })
 </script>
